@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/landing.css" />
+    <link rel="stylesheet" href="css/slider.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/landingAnimation.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <a class="main-logo" href="#"
+          ><img src="img/icons/logo.png" alt=""
+        /></a>
+        <ul class="hiddable-part">
+          <li>
+            <ul class="menu-list">
+              <li class="menu-item"><a href="#">Послуги</a></li>
+              <li class="menu-item"><a href="#">Студії</a></li>
+              <li class="menu-item"><a href="#">Про нас</a></li>
+              <li class="menu-item"><a href="#">404</a></li>
+            </ul>
+          </li>
+          <li>
+            <nav>
+              <input type="text" placeholder="Пошук" />
+              <a class="search-icon" href="#"
+                ><img src="img/icons/searchIcon.png" alt=""
+              /></a>
+            </nav>
+          </li>
+        </ul>
+        <button class="toggler">
+          <div class="toggler-shape"></div>
+        </button>
+      </header>
+      <div class="carousel-block">
+        <div class="row">
+          <div class="col-12">
+            <div class="gallery" data-spin-delay="0" id="gallery">
+              <ul id="slider">
+                <li class="slider-inner active">
+                  <img
+                    src="img/content/landing/landingCarousel/carouselItem.png"
+                    alt=""
+                  />
+                  <!-- <h2>Найкращий сайт для вибору салону у Львові!</h2> -->
+                </li>
+                <li class="slider-inner">
+                  <img
+                    src="img/content/landing/landingCarousel/carouselItem1.png"
+                    alt=""
+                  />
+                </li>
+                <li class="slider-inner">
+                  <img
+                    src="img/content/landing/landingCarousel/carouselItem2.png"
+                    alt=""
+                  />
+                </li>
+                <li class="slider-inner">
+                  <img
+                    src="img/content/landing/landingCarousel/carouselItem3.png"
+                    alt=""
+                  />
+                </li>
+                <li class="slider-inner">
+                  <img
+                    src="img/content/landing/landingCarousel/carouselItem4.png"
+                    alt=""
+                  />
+                </li>
+                <li class="slider-inner">
+                  <img
+                    src="img/content/landing/landingCarousel/carouselItem5.png"
+                    alt=""
+                  />
+                </li>
+                <li class="slider-inner">
+                  <img
+                    src="img/content/landing/landingCarousel/carouselItem6.png"
+                    alt=""
+                  />
+                </li>
+                <li class="slider-inner">
+                  <img
+                    src="img/content/landing/landingCarousel/carouselItem7.png"
+                    alt=""
+                  />
+                </li>
+              </ul>
+              <div class="buttons">
+                <button id="prev">❮</button>
+                <button id="next">❯</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="catergories-block">
+        <div class="row mt-5 py"><h1>Послуги</h1></div>
+        <div class="row mt-4 mb-5 justify-content-between py">
+          <div class="col-md-6 col-lg-4">
+            <div class="category">
+              <a href="categories.html"><h2>Make Up</h2></a>
+              <div class="shadow"></div>
+              <img
+                class="img-fluid"
+                src="img/content/landing/categoryChoose/makeUp.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="category">
+              <a href="categories.html"><h2>Nails</h2></a>
+              <div class="shadow"></div>
+              <img
+                class="img-fluid"
+                src="img/content/landing/categoryChoose/nails.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="category">
+              <a href="categories.html"><h2>Hairdresser</h2></a>
+              <div class="shadow"></div>
+              <img
+                class="img-fluid"
+                src="img/content/landing/categoryChoose/hairdresser.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="category">
+              <a href="categories.html"><h2>Depilation</h2></a>
+              <div class="shadow"></div>
+              <img
+                class="img-fluid"
+                src="img/content/landing/categoryChoose/depilation.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="category">
+              <a href="categories.html"><h2>Massage</h2></a>
+              <div class="shadow"></div>
+              <img
+                class="img-fluid"
+                src="img/content/landing/categoryChoose/massage.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="category">
+              <button class="categories-btn">Переглянути всі</button>
+              <div class="shadow"></div>
+              <img
+                class="img-fluid"
+                src="img/content/landing/categoryChoose/other.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner-block">
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-5 atention-block">
+            <h2>Увага!</h2>
+            <div class="content">
+              <p>Щоб дізнатися про знижки , підпишись на нашу розсилку!</p>
+            </div>
+            <button class="subscribe-btn" type="button" href="#">
+              Підписатися
+            </button>
+          </div>
+          <div class="image-block col-md-6 col-lg-5 col-8">
+            <img
+              class="img-fluid"
+              src="img/content/landing/landingBanner/brush.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="top-block">
+        <div class="row mt-5 mb-3 py"><h1>Топ студій</h1></div>
+        <div class="row mb-5 py">
+          <div class="col-lg-3 col-md-6">
+            <div class="salon-card">
+              <img
+                class="img-fluid"
+                src="img/content/salons/cardPhoto.png"
+                alt=""
+              />
+              <div class="content">
+                <h6>Студія</h6>
+                <span>вул. Мих-миха</span>
+              </div>
+              <button class="check-btn">Переглянути</button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="salon-card">
+              <img
+                class="img-fluid"
+                src="img/content/salons/cardPhoto.png"
+                alt=""
+              />
+              <div class="content">
+                <h6>Студія</h6>
+                <span>вул. Мих-миха</span>
+              </div>
+              <button class="check-btn">Переглянути</button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="salon-card">
+              <img
+                class="img-fluid"
+                src="img/content/salons/cardPhoto.png"
+                alt=""
+              />
+              <div class="content">
+                <h6>Студія</h6>
+                <span>вул. Мих-миха</span>
+              </div>
+              <button class="check-btn">Переглянути</button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="salon-card">
+              <img
+                class="img-fluid"
+                src="img/content/salons/cardPhoto.png"
+                alt=""
+              />
+              <div class="content">
+                <h6>Студія</h6>
+                <span>вул. Мих-миха</span>
+              </div>
+              <button class="check-btn">Переглянути</button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="salon-card">
+              <img
+                class="img-fluid"
+                src="img/content/salons/cardPhoto.png"
+                alt=""
+              />
+              <div class="content">
+                <h6>Студія</h6>
+                <span>вул. Мих-миха</span>
+              </div>
+              <button class="check-btn">Переглянути</button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="salon-card">
+              <img
+                class="img-fluid"
+                src="img/content/salons/cardPhoto.png"
+                alt=""
+              />
+              <div class="content">
+                <h6>Студія</h6>
+                <span>вул. Мих-миха</span>
+              </div>
+              <button class="check-btn">Переглянути</button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="salon-card">
+              <img
+                class="img-fluid"
+                src="img/content/salons/cardPhoto.png"
+                alt=""
+              />
+              <div class="content">
+                <h6>Студія</h6>
+                <span>вул. Мих-миха</span>
+              </div>
+              <button class="check-btn">Переглянути</button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="salon-card">
+              <img
+                class="img-fluid"
+                src="img/content/salons/cardPhoto.png"
+                alt=""
+              />
+              <div class="content">
+                <h6>Студія</h6>
+                <span>вул. Мих-миха</span>
+              </div>
+              <button class="check-btn">Переглянути</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modals">
+        <div class="subscribe-modal row">
+          <div class="col-md-6 col-lg-4 modal-body">
+            <div class="content">
+              <h2>Підпишіться на нашу розсилку</h2>
+              <input type="text" placeholder="Ваше ім'я" />
+              <input
+                rows="5"
+                class="big-input"
+                type="text"
+                placeholder="Ваш емейл"
+              />
+              <button class="subscribe-apply-btn">Підписатися</button>
+            </div>
+          </div>
+          <div class="modal-background"></div>
+        </div>
+      </div>
+      <div class="map-block">
+        <div class="row mt-5 mb-3 py"><h1>Розташування студій</h1></div>
+        <div class="row">
+          <div class="col-12">
+            <iframe
+              width="100%"
+              height="400px"
+              src="https://api.mapbox.com/styles/v1/macabre/ckv5f9b743vko15qq33qjflg5.html?title=false&access_token=pk.eyJ1IjoibWFjYWJyZSIsImEiOiJja3Y1ZjV0aGgwcGpnMm9wZzR4OGtjNmd0In0.xj1u05Ul3cy405mGAgrZSA&zoomwheel=false#14.01/49.83598/24.02215"
+              title="Basic"
+              style="border: none"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="modals">
+        <div class="site-comment-modal row">
+          <div class="col-md-6 col-lg-4 modal-body">
+            <div class="content">
+              <h2>Якщо ти хочеш щось запропонувати не соромся, пиши нам!</h2>
+              <input type="text" placeholder="Ваше ім'я" />
+              <input type="text" placeholder="Ваш емейл" />
+              <textarea
+                rows="5"
+                class="big-input"
+                type="text"
+                placeholder="Ваше повідомлення"
+              ></textarea>
+              <button class="subscribe-apply-btn">Підписатися</button>
+            </div>
+          </div>
+          <div class="modal-background"></div>
+        </div>
+      </div>
+      <footer>
+        <div class="row justify-content-between py pt-3 pb-3">
+          <div class="col-lg-4">
+            <p>Якщо ти хочеш щось запропонувати не соромся, пиши нам!</p>
+          </div>
+          <div class="col-lg-4 col-md-8">
+            <button class="site-comment-btn">Написати</button>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <a href="#" class="main-logo">
+              <img src="img/icons/logo.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </footer>
+      <div class="loader">
+        <img src="img/icons/bigLogo.png" alt="" />
+      </div>
+    </div>
+  </body>
+  <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/swipe/2.0.0/swipe.min.js"></script> -->
+  <script src="js/header.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/landing.js"></script>
+  <script src="js/scrollAnimation.js"></script>
+  <script src="js/main.js"></script>
+</html>
